@@ -21,7 +21,7 @@
   transform: scale(1.1); /* нужно, чтобы размытие не обрезалось краями */
   background-size: cover;
   background-position: center;
-  background-image: url('/img/background.png');
+  background-image: url('/static/img/background.png');
   filter: blur(12px) brightness(1);
 }
 

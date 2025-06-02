@@ -2,6 +2,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+
+
 const config: Config = {
     title: 'HollowEngine Docs',
     favicon: 'img/logo.png',
@@ -11,10 +13,10 @@ const config: Config = {
     },
 
     url: 'https://hollowengine.github.io',
-    baseUrl: '/',
+    baseUrl: '/hollowengine.github.io/',
+    organizationName: 'HollowHorizon',
+    projectName: 'hollowengine.github.io',
     deploymentBranch: 'main',
-    organizationName: 'Phase Of Horizon',
-    projectName: 'HollowEngine Docs',
 
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -62,7 +64,7 @@ const config: Config = {
                     onUntruncatedBlogPosts: 'warn',
                 },
                 theme: {
-                    customCss: './src/css/custom.css',
+                    customCss: './src/css/suite.css',
                 },
             } satisfies Preset.Options,
         ],
@@ -102,6 +104,21 @@ const config: Config = {
             darkTheme: prismThemes.dracula,
         },
     } satisfies Preset.ThemeConfig,
+
+    plugins: [
+        function myPlugin() {
+            return {
+                name: 'disable-css-minimizer',
+                configureWebpack() {
+                    return {
+                        optimization: {
+                            minimize: false,
+                        },
+                    };
+                },
+            };
+        },
+    ],
 };
 
 export default config;
