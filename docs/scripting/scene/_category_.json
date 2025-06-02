@@ -1,0 +1,8 @@
+{
+  "label": "Сцена",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Всё что связанно с сюжетными событиями."
+  }
+}
