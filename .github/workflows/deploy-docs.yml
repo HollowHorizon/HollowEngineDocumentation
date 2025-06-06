@@ -43,40 +43,40 @@ jobs:
           curl -X POST "$DISCORD_WEBHOOK" \
             -H "Content-Type: application/json" \
             -d "$(jq -n \
-              --arg content "" \
               --arg title "✅ Docusaurus Deploy Succeeded" \
               --arg url "https://hollowhorizon.github.io/hollowengine.github.io/" \
               --arg commit "${{ github.sha }}" \
-              --arg date "$(date -u +"%Y-%m-%d %H:%M:%S UTC")" \
+              --arg date "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
               '{
                 embeds: [
                   {
                     title: $title,
-                    description: "[Открыть](" + $url + ")\nCommit: `" + $commit + "`",
+                    description: "[Открыть документацию](\($url))\nCommit: `\($commit)`",
                     color: 5763719,
                     timestamp: $date
                   }
                 ]
               }')"
-
+      
+      
       - name: ❌ Notify Discord on failure
         if: failure()
         run: |
           curl -X POST "$DISCORD_WEBHOOK" \
             -H "Content-Type: application/json" \
             -d "$(jq -n \
-              --arg content "" \
               --arg title "❌ Docusaurus Deploy Failed" \
               --arg url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
               --arg commit "${{ github.sha }}" \
-              --arg date "$(date -u +"%Y-%m-%d %H:%M:%S UTC")" \
+              --arg date "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
               '{
                 embeds: [
                   {
                     title: $title,
-                    description: "Commit: `" + $commit + "`\n[View Logs](" + $url + ")",
+                    description: "Commit: `\($commit)`\n[View Logs](\($url))",
                     color: 15548997,
                     timestamp: $date
                   }
                 ]
               }')"
+
