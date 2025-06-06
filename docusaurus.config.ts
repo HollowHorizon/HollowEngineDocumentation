@@ -13,7 +13,7 @@ const config: Config = {
     },
 
     url: 'https://hollowengine.github.io',
-    baseUrl: '/hollowengine.github.io/',
+    baseUrl: '/HollowEngineDocumentation/',
     organizationName: 'HollowHorizon',
     projectName: 'hollowengine.github.io',
     deploymentBranch: 'main',
