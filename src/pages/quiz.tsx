@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import { useHistory } from '@docusaurus/router';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const rawQuestions = [
     {
@@ -68,7 +69,15 @@ function shuffle<T>(array: T[]): T[] {
     return copy;
 }
 
-export default function QuizPage() {
+export default function QuizPageWrapper() {
+    return (
+        <BrowserOnly>
+            {() => <QuizPage />}
+        </BrowserOnly>
+    );
+}
+
+function QuizPage() {
     const history = useHistory();
     const [current, setCurrent] = useState(() => {
         const saved = localStorage.getItem(CURRENT_KEY);
