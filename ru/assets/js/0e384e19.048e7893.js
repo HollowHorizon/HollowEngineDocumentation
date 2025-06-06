@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-intro-md-0e3.json
-const site_docs_intro_md_0e3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"intro","title":"Введение","description":"Вы попали в документацию по моду __HollowEngine__!","source":"@site/docs/intro.md","sourceDirName":".","slug":"/intro","permalink":"/HollowEngineDocumentation/docs/intro","draft":false,"unlisted":false,"editUrl":"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1,"title":"Введение"},"sidebar":"tutorialSidebar","next":{"title":"Установка","permalink":"/HollowEngineDocumentation/docs/install"}}');
+const site_docs_intro_md_0e3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"intro","title":"Введение","description":"Вы попали в документацию по моду __HollowEngine__!","source":"@site/docs/intro.md","sourceDirName":".","slug":"/intro","permalink":"/HollowEngineDocumentation/ru/docs/intro","draft":false,"unlisted":false,"editUrl":"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1,"title":"Введение"},"sidebar":"tutorialSidebar","next":{"title":"Установка","permalink":"/HollowEngineDocumentation/ru/docs/install"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
@@ -79,7 +79,7 @@ function _createMdxContent(props) {
       }), (0,jsx_runtime.jsx)("link", {
         rel: "prefetch",
         as: "image",
-        href: "@site/static/img/headers/welcome.webp"
+        href: "@site/static/img/headers/welcome.png"
       }), (0,jsx_runtime.jsx)("div", {
         className: "cont",
         children: (0,jsx_runtime.jsx)("div", {
@@ -88,9 +88,9 @@ function _createMdxContent(props) {
           children: (0,jsx_runtime.jsx)(_components.p, {
             children: (0,jsx_runtime.jsx)(_components.img, {
               alt: "Welcome",
-              src: (__webpack_require__(3903)/* ["default"] */ .A) + "",
-              width: "960",
-              height: "540"
+              src: (__webpack_require__(9078)/* ["default"] */ .A) + "",
+              width: "1280",
+              height: "720"
             })
           })
         })
@@ -143,13 +143,13 @@ function MDXContent(props = {}) {
 
 /***/ }),
 
-/***/ 3903:
+/***/ 9078:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/welcome-b25efa21ff4c4c0feb5b42123a6e4b52.webp");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "assets/images/welcome-134779434c393cbd4069345bce3b9e4c.png");
 
 /***/ })
 
