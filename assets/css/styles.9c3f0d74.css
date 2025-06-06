@@ -4231,7 +4231,7 @@ body {
   transform: scale(1.1); /* нужно, чтобы размытие не обрезалось краями */
   background-size: cover;
   background-position: center;
-  background-image: url(/hollowengine.github.io/ru/assets/images/background-2eb937f12e88bc00b07fde31a9291e93.png);
+  background-image: url(/HollowEngineDocumentation/assets/images/background-2eb937f12e88bc00b07fde31a9291e93.png);
   filter: blur(12px) brightness(1);
 }
 

@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-pages/default/site-src-pages-markdown-page-md-393.json
-const site_src_pages_markdown_page_md_393_namespaceObject = /*#__PURE__*/JSON.parse('{"type":"mdx","permalink":"/hollowengine.github.io/markdown-page","source":"@site/src/pages/markdown-page.md","title":"Markdown page example","description":"You don\'t need React to write simple standalone pages.","frontMatter":{"title":"Markdown page example"},"unlisted":false}');
+const site_src_pages_markdown_page_md_393_namespaceObject = /*#__PURE__*/JSON.parse('{"type":"mdx","permalink":"/HollowEngineDocumentation/markdown-page","source":"@site/src/pages/markdown-page.md","title":"Markdown page example","description":"You don\'t need React to write simple standalone pages.","frontMatter":{"title":"Markdown page example"},"unlisted":false}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js

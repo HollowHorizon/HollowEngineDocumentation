@@ -18,7 +18,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 ;// ./.docusaurus/docusaurus-plugin-content-docs/default/site-docs-intro-md-0e3.json
-const site_docs_intro_md_0e3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"intro","title":"Введение","description":"Вы попали в документацию по моду __HollowEngine__!","source":"@site/docs/intro.md","sourceDirName":".","slug":"/intro","permalink":"/hollowengine.github.io/ru/docs/intro","draft":false,"unlisted":false,"editUrl":"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1,"title":"Введение"},"sidebar":"tutorialSidebar","next":{"title":"Установка","permalink":"/hollowengine.github.io/ru/docs/install"}}');
+const site_docs_intro_md_0e3_namespaceObject = /*#__PURE__*/JSON.parse('{"id":"intro","title":"Введение","description":"Вы попали в документацию по моду __HollowEngine__!","source":"@site/docs/intro.md","sourceDirName":".","slug":"/intro","permalink":"/HollowEngineDocumentation/docs/intro","draft":false,"unlisted":false,"editUrl":"https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md","tags":[],"version":"current","sidebarPosition":1,"frontMatter":{"sidebar_position":1,"title":"Введение"},"sidebar":"tutorialSidebar","next":{"title":"Установка","permalink":"/HollowEngineDocumentation/docs/install"}}');
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(4848);
 // EXTERNAL MODULE: ./node_modules/@mdx-js/react/lib/index.js
