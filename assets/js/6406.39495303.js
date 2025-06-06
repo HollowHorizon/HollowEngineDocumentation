@@ -27925,7 +27925,7 @@ var detector5 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)((txt) => {
   return /^\s*gitGraph/.test(txt);
 }, "detector");
 var loader5 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(315)]).then(__webpack_require__.bind(__webpack_require__, 315));
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(8731), __webpack_require__.e(315)]).then(__webpack_require__.bind(__webpack_require__, 315));
   return { id: id5, diagram: diagram2 };
 }, "loader");
 var plugin5 = {
@@ -27957,7 +27957,7 @@ var detector7 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)((txt) => {
   return /^\s*info/.test(txt);
 }, "detector");
 var loader7 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(9996)]).then(__webpack_require__.bind(__webpack_require__, 9996));
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(8731), __webpack_require__.e(9996)]).then(__webpack_require__.bind(__webpack_require__, 9996));
   return { id: id7, diagram: diagram2 };
 }, "loader");
 var info = {
@@ -27972,7 +27972,7 @@ var detector8 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)((txt) => {
   return /^\s*pie/.test(txt);
 }, "detector");
 var loader8 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(7298)]).then(__webpack_require__.bind(__webpack_require__, 7298));
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(8731), __webpack_require__.e(7298)]).then(__webpack_require__.bind(__webpack_require__, 7298));
   return { id: id8, diagram: diagram2 };
 }, "loader");
 var pie = {
@@ -28283,7 +28283,7 @@ var detector23 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)((txt) => {
   return /^\s*packet-beta/.test(txt);
 }, "detector");
 var loader23 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(4931)]).then(__webpack_require__.bind(__webpack_require__, 4931));
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(8731), __webpack_require__.e(4931)]).then(__webpack_require__.bind(__webpack_require__, 4931));
   return { id: id23, diagram: diagram2 };
 }, "loader");
 var packet = {
@@ -28298,7 +28298,7 @@ var detector24 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)((txt) => {
   return /^\s*radar-beta/.test(txt);
 }, "detector");
 var loader24 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(7643)]).then(__webpack_require__.bind(__webpack_require__, 7643));
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(8731), __webpack_require__.e(7643)]).then(__webpack_require__.bind(__webpack_require__, 7643));
   return { id: id24, diagram: diagram2 };
 }, "loader");
 var radar = {
@@ -28329,7 +28329,7 @@ var detector26 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)((txt) => {
   return /^\s*architecture/.test(txt);
 }, "detector");
 var loader26 = /* @__PURE__ */ (0,chunk_YTJNT7DU/* __name */.K2)(async () => {
-  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(165), __webpack_require__.e(8938)]).then(__webpack_require__.bind(__webpack_require__, 8938));
+  const { diagram: diagram2 } = await Promise.all(/* import() */[__webpack_require__.e(2076), __webpack_require__.e(8731), __webpack_require__.e(165), __webpack_require__.e(8938)]).then(__webpack_require__.bind(__webpack_require__, 8938));
   return { id: id26, diagram: diagram2 };
 }, "loader");
 var architecture = {
