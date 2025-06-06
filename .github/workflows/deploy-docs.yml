@@ -8,9 +8,13 @@ on:
 permissions:
   contents: write
 
+env:
+  DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -31,4 +35,48 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          publish_branch: main 
+          publish_branch: main
+
+      - name: ✅ Notify Discord on success
+        if: success()
+        run: |
+          curl -X POST "$DISCORD_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -n \
+              --arg content "" \
+              --arg title "✅ Docusaurus Deploy Succeeded" \
+              --arg url "https://hollowhorizon.github.io/hollowengine.github.io/" \
+              --arg commit "${{ github.sha }}" \
+              --arg date "$(date -u +"%Y-%m-%d %H:%M:%S UTC")" \
+              '{
+                embeds: [
+                  {
+                    title: $title,
+                    description: "[Открыть](" + $url + ")\nCommit: `" + $commit + "`",
+                    color: 5763719,
+                    timestamp: $date
+                  }
+                ]
+              }')"
+
+      - name: ❌ Notify Discord on failure
+        if: failure()
+        run: |
+          curl -X POST "$DISCORD_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -n \
+              --arg content "" \
+              --arg title "❌ Docusaurus Deploy Failed" \
+              --arg url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+              --arg commit "${{ github.sha }}" \
+              --arg date "$(date -u +"%Y-%m-%d %H:%M:%S UTC")" \
+              '{
+                embeds: [
+                  {
+                    title: $title,
+                    description: "Commit: `" + $commit + "`\n[View Logs](" + $url + ")",
+                    color: 15548997,
+                    timestamp: $date
+                  }
+                ]
+              }')"
