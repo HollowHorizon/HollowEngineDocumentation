@@ -11,9 +11,9 @@ import '@site/src/css/pages/img-show.css';
 
 **Вы попали в документацию по моду __`HollowEngine`__!**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/welcome.webp" />
+<link rel="prefetch" as="image" href="@site/static/img/headers/welcome.png" />
 <div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/welcome.webp)
+![Welcome](@site/static/img/headers/welcome.png)
 </div></div>
 
 ---
