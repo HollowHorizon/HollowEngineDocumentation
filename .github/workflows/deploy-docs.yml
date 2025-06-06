@@ -3,10 +3,9 @@ name: Deploy Docusaurus to GitHub Pages
 on:
   push:
     branches:
-      - main  # или другая ветка, с которой ты хочешь публиковать
-
+      - master
 permissions:
-  contents: write  # требуется для пуша в ветку gh-pages
+  contents: write
 
 jobs:
   deploy:
