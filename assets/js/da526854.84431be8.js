@@ -94,10 +94,6 @@ const toc = [{
   "value": "🔄 Обновление и отправка",
   "id": "-обновление-и-отправка",
   "level": 2
-}, {
-  "value": "✅ Заключение",
-  "id": "-заключение",
-  "level": 2
 }];
 function _createMdxContent(props) {
   const _components = {
@@ -646,17 +642,7 @@ function _createMdxContent(props) {
       children: ["\n", (0,jsx_runtime.jsx)(_components.p, {
         children: "🔔 Система оптимизирована и не вызывает зависаний."
       }), "\n"]
-    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.h2, {
-      id: "-заключение",
-      children: "✅ Заключение"
-    }), "\n", (0,jsx_runtime.jsx)(_components.p, {
-      children: "Контроллеры анимаций HollowCore — это гибкая и масштабируемая система, идеально подходящая для создания реалистичных и реактивных NPC. Благодаря Molang, BlendTrees и слоям, можно создать поведение, приближенное к AAA-играм."
-    }), "\n", (0,jsx_runtime.jsx)(_components.pre, {
-      children: (0,jsx_runtime.jsx)(_components.code, {
-        className: "language-kotlin",
-        children: "npc.controller = animationController { ... }\n"
-      })
-    }), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
+    }), "\n", (0,jsx_runtime.jsx)(_components.hr, {}), "\n", (0,jsx_runtime.jsx)(_components.admonition, {
       title: "Маски",
       type: "note",
       children: (0,jsx_runtime.jsx)(_components.p, {
