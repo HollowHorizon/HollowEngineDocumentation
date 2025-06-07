@@ -40,43 +40,51 @@ jobs:
       - name: ✅ Notify Discord on success
         if: success()
         run: |
+          COMMIT_TITLE=$(git log -1 --pretty=%s)
+          COMMIT_BODY=$(git log -1 --pretty=%b)
           curl -X POST "$DISCORD_WEBHOOK" \
             -H "Content-Type: application/json" \
             -d "$(jq -n \
               --arg title "✅ Docusaurus Deploy Succeeded" \
               --arg url "https://hollowhorizon.github.io/HollowEngineDocumentation/" \
               --arg commit "${{ github.sha }}" \
+              --arg commitTitle "$COMMIT_TITLE" \
+              --arg commitBody "$COMMIT_BODY" \
               --arg date "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
               '{
                 embeds: [
                   {
                     title: $title,
-                    description: "[Открыть документацию](\($url))\nCommit: `\($commit)`",
+                    description: "[Открыть документацию](\($url))\n\n**Commit:** `\($commit)`\n**Message:** \($commitTitle)\n\($commitBody)",
                     color: 5763719,
                     timestamp: $date
                   }
                 ]
               }')"
-      
-      
+
       - name: ❌ Notify Discord on failure
         if: failure()
         run: |
+          COMMIT_TITLE=$(git log -1 --pretty=%s)
+          COMMIT_BODY=$(git log -1 --pretty=%b)
           curl -X POST "$DISCORD_WEBHOOK" \
             -H "Content-Type: application/json" \
             -d "$(jq -n \
               --arg title "❌ Docusaurus Deploy Failed" \
               --arg url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
               --arg commit "${{ github.sha }}" \
+              --arg commitTitle "$COMMIT_TITLE" \
+              --arg commitBody "$COMMIT_BODY" \
               --arg date "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
               '{
                 embeds: [
                   {
                     title: $title,
-                    description: "Commit: `\($commit)`\n[View Logs](\($url))",
+                    description: "**Commit:** `\($commit)`\n**Message:** \($commitTitle)\n\($commitBody)\n\n[View Logs](\($url))",
                     color: 15548997,
                     timestamp: $date
                   }
                 ]
               }')"
+      
 
