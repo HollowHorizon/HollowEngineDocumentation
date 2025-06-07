@@ -235,7 +235,7 @@ function _createMdxContent(props) {
       children: "📘 Molang в контроллере"
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
       children: [(0,jsx_runtime.jsx)(_components.a, {
-        href: "https://learn.microsoft.com/en-us/minecraft/creator/molang/",
+        href: "https://learn.microsoft.com/ru-ru/minecraft/creator/reference/content/molangreference/",
         children: "Molang"
       }), " — язык выражений, используемый для условий переходов, скоростей анимаций и т.п."]
     }), "\n", (0,jsx_runtime.jsxs)(_components.p, {
