@@ -3,18 +3,13 @@ sidebar_position: 1
 title: Создание Персонажа
 ---
 
-import '@site/src/css/pages/img-show.css';
-
 <div align="center">
 
 # Создание Персонажа
 
 **Создайте себе функционального персонажа.**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/npc-creating.webp" />
-<div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/npc-creating.webp)
-</div></div>
+<TitleImg id ='npc-creating' />
 
 ---
 

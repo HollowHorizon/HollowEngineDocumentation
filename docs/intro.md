@@ -3,18 +3,13 @@ sidebar_position: 1
 title: Введение
 ---
 
-import '@site/src/css/pages/img-show.css';
-
 <div align="center">
 
 # Добро пожаловать
 
 **Вы попали в документацию по моду __`HollowEngine`__!**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/welcome2.webp" />
-<div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/welcome2.webp)
-</div></div>
+<TitleImg id='welcome2' />
 
 ---
 

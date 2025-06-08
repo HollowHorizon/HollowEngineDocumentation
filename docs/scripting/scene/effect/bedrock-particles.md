@@ -3,18 +3,13 @@ sidebar_position: 2
 title: Bedrock-партиклы
 ---
 
-import '@site/src/css/pages/img-show.css';
-
 <div align="center">
 
 # 🌌 Bedrock-партиклы
 
 **Воспроизводите любое аудио прямо в игре!**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/particles.webp" />
-<div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/particles.webp)
-</div></div>
+<TitleImg id='particles' />
 
 ---
 

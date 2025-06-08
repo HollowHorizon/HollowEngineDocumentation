@@ -3,18 +3,13 @@ sidebar_position: 1
 title: Аудио
 ---
 
-import '@site/src/css/pages/img-show.css';
-
 <div align="center">
 
 # 🔊 Аудио
 
 **Воспроизводите любое аудио прямо в игре!**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/audio.webp" />
-<div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/audio.webp)
-</div></div>
+<TitleImg id='audio' />
 
 ---
 

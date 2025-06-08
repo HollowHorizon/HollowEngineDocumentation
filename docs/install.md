@@ -3,18 +3,13 @@ sidebar_position: 2
 title: Установка
 ---
 
-import '@site/src/css/pages/img-show.css';
-
 <div align="center">
 
 # Установка HollowEngine
 
 **Здесь Вы всегда найдёте актуальную информацию по тому, где скачать и как установить мод.**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/download.webp" />
-<div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/download.webp)
-</div></div>
+<TitleImg id='download' />
 
 ---
 

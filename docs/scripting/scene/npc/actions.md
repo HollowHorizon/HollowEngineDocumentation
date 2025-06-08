@@ -6,8 +6,6 @@ id: npc-actions
 desc: 'NaN'
 ---
 
-import '@site/src/css/pages/pc-phone-ver.css';
-
 
 <div align="center">
 
@@ -15,10 +13,7 @@ import '@site/src/css/pages/pc-phone-ver.css';
 
 **Научите его писать за вас скрипты.**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/npc-actions.webp" />
-<div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/npc-actions.webp)
-</div></div>
+<TitleImg id='npc-actions' />
 
 ---
 

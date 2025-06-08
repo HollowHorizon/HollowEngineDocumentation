@@ -3,7 +3,6 @@ sidebar_position: 1
 title: Создание сцены
 ---
 
-import '@site/src/css/pages/img-show.css';
 import Mermaid from '@theme/Mermaid';
 
 <div align="center">
@@ -12,10 +11,7 @@ import Mermaid from '@theme/Mermaid';
 
 **Всё о том, как создавать сцены и работать с ними.**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/scene.webp" />
-<div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/scene.webp)
-</div></div>
+<TitleImg id='scene' />
 
 ---
 

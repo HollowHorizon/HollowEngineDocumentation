@@ -1,0 +1,19 @@
+:root[data-theme='dark'] {
+  --bg-color: #fff;
+  --border-color: #f00;
+}
+:root[data-theme='light'] {
+  --bg-color: #f00;
+  --border-color: #fff;
+}
+
+.toggle-content-button {
+
+}
+.toggle-content-button:hover {
+
+}
+
+.toggle-content-block {
+
+}

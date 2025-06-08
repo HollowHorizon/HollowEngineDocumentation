@@ -3,18 +3,13 @@ sidebar_position: 1
 title: Введение в скриптинг
 ---
 
-import '@site/src/css/pages/img-show.css';
-
 <div align="center">
 
 # Ваш первый скрипт
 
 **Здесь Вы узнаете, как создавать скрипты и запускать их, а также какие есть виды скриптов.**
 
-<link rel="prefetch" as="image" href="@site/static/img/headers/first-script.webp" />
-<div className="cont"><div className="show" id="mask">
-![Welcome](@site/static/img/headers/first-script.webp)
-</div></div>
+<TitleImg id='first-script' />
 
 ---
 

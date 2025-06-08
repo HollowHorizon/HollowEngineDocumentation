@@ -105,20 +105,7 @@ const config: Config = {
         },
     } satisfies Preset.ThemeConfig,
 
-    plugins: [
-        function myPlugin() {
-            return {
-                name: 'disable-css-minimizer',
-                configureWebpack() {
-                    return {
-                        optimization: {
-                            minimize: false,
-                        },
-                    };
-                },
-            };
-        },
-    ],
+    plugins: [ ]
 };
 
 export default config;
