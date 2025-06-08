@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import React, { useEffect } from 'react';
+import { useLocation, useHistory } from '@docusaurus/router';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
@@ -30,6 +32,9 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
+    const location = useLocation();
+    const history = useHistory();
+
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
