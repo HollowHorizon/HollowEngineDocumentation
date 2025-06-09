@@ -1,0 +1,26 @@
+/* Триггер контент */
+.tooltip-wrapper {
+  display: inline-block;
+  position: relative;
+  /*background-color: var(--ifm-navbar-link-hover-color); Холоу сказал шо нинада */
+  border-radius: 1rem;
+  font-weight: 500;
+}
+
+/* Подсказка */
+.tooltip-content {
+  background-color: var(--ifm-background-surface-color);
+
+  padding: 8px 12px;
+
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: var(--ifm-navbar-link-hover-color);
+
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 75%;
+  min-width: 150px;
+  min-height: 40px;
+  font-size: 14px;
+}
